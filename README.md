@@ -1,15 +1,13 @@
-Name:PAVANA.G
 
-Register Number: 212222230105
-# EXPERIMENT 06 SQUARE WAVE GENERATION AT THE OUTPUT PIN USING TIMER
-
-### Aim:
+### EXPERIMENT 06 SQUARE WAVE GENERATION AT THE OUTPUT PIN USING TIMER
+### DATE:
+#### Aim:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
 
-### Components required:
+#### Components required:
 STM32 CUBE IDE, Proteus 8 simulator .
 
-### Theory:
+#### Theory:
 
 The timer modules can operate a variety of modes one of which is the PWM mode. Where the timer gets clocked from an internal source and counts up to the auto-reload register value, then the output channel pin is driven HIGH. And it remains until the timer counts reach the CCRx register value, the match event causes the output channel pin to be driven LOW. And it remains until the timer counts up to the auto-reload register value, and so on.
 
@@ -47,7 +45,7 @@ In normal settings, assuming you’re using the timer module in PWM mode and gen
 
 
 
-## Procedure:
+#### Procedure:
 Step1: Open CubeMX & Create New Project.
  
 Step2: Choose The Target MCU & Double-Click Its Name select the target to be programmed and click on next.
@@ -92,7 +90,7 @@ Step14. click on debug and simulate using simulation as shown below
 
   
 
-## STM 32 CUBE PROGRAM :
+#### STM 32 CUBE PROGRAM :
 ```
 #include "main.h"
 
@@ -228,8 +226,8 @@ void assert_failed(uint8_t *file, uint32_t line)
  
  
 
-## DUTY CYCLE AND FREQUENCY CALCULATION 
-### FOR DUTY RATIO 50%
+#### DUTY CYCLE AND FREQUENCY CALCULATION 
+#### FOR DUTY RATIO 50%
 ![50%](https://github.com/amal-2006/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/148410730/5bccadbe-a182-4d07-a7e3-63e54c0bfd47)
 
 TON = 0.6ms
@@ -240,7 +238,7 @@ TOTAL TIME = 1.2ms
 
 FREQUENCY = 1/(1.2ms) = 833.33Hz
 
-### FOR DUTY RATIO 70%
+#### FOR DUTY RATIO 70%
 ![70%](https://github.com/amal-2006/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/148410730/ac49d393-e7a6-48aa-904f-dc3a7555bcd6)
 
 TON = 0.84ms
@@ -252,7 +250,7 @@ TOTAL TIME = 1.2ms
 FREQUENCY = 1/(1.2ms) = 833.33Hz
 
 
-### FOR DUTY RATIO 90%
+#### FOR DUTY RATIO 90%
 ![90%](https://github.com/amal-2006/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/148410730/4ca495c4-a7e4-4754-a48d-7afb0522e7aa)
 
 
@@ -265,15 +263,15 @@ TOTAL TIME = 1.2ms
 
 FREQUENCY = 1/(1.2ms) = 833.33Hz
 
-## OUTPUT SCREENSHOTS OF PROTEUS:
+#### OUTPUT SCREENSHOTS OF PROTEUS:
 ![Proteus Screenshot](https://github.com/amal-2006/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/148410730/0b9be261-6732-4764-b89d-fd0ff58f92b0)
 
 
-## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):
+#### CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):
 ![Circuit Diagram](https://github.com/amal-2006/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/148410730/46151de5-9188-4aab-baec-07e5d61b2c2e)
 
  
-## Result :
+#### Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated.
 
 
